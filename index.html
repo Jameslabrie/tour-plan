@@ -12,38 +12,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-top">
-        <a href="#" class="logo">
-          <img
-            src="img/horizontal-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo__image"
-          />
-        </a>
-        <form action="#" class="search">
-          <input
-            type="text"
-            class="search__input"
-            placeholder="Search Location"
-          />
-          <button class="button search__button">
-            <img src="img/search.svg" alt="" />
-          </button>
-        </form>
-        <!-- /.search -->
-        <div class="user">
-          <a href="#" class="user__link"
-            ><img
-              src="//img/avatar.jpeg"
-              alt="Avatar: Nathan"
-              class="user__avatar"
-            /><span class="user__name">Nathan</span></a
-          >
+      <div class="container">
+        <div class="header__top">
+          <a href="#" class="logo">
+            <img
+              src="img/horizontal-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo__image"
+            />
+          </a>
+
+          <form action="#" class="search header__search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Location"
+            />
+            <button class="button search__button">
+              <img
+                class="button__icon"
+                src="img/search.svg"
+                alt="Icon: search"
+              />
+            </button>
+          </form>
+          <!-- /.search -->
+          <div class="user">
+            <a href="#" class="user__link"
+              ><img
+                src="img/avatar.jpeg"
+                alt="Avatar: Nathan"
+                class="user__avatar"
+              /><span class="user__name">Nathan</span></a
+            >
+          </div>
+          <!-- /.user -->
         </div>
-        <!-- /.user -->
+        <!-- /.header-top -->
+
         <nav class="header-menu">
           <ul class="menu">
             <li class="menu__item">
@@ -70,7 +80,7 @@
           </ul>
         </nav>
       </div>
-      <!-- /.header-container -->
+      <!-- /.container -->
     </header>
   </body>
 </html>
