@@ -336,19 +336,49 @@ body {
   margin: auto;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
-.header__top {
+.navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.header__search {
+.navbar-top__menu-button {
+  display: none;
+}
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.navbar-bottom {
+  background-color: #0A223D;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-menu__item {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navbar-menu__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .search {
@@ -386,9 +416,6 @@ body {
 }
 
 .user {
-  width: 40px;
-}
-.user__link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -407,4 +434,61 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar-bottom {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .navbar-menu__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
+  }
+  .logo {
+    width: 132px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 650px;
+    width: 90%;
+  }
+  .navbar-top__menu-button {
+    justify-content: space-between;
+    height: 11px;
+    padding: 0;
+  }
+  .navbar__search, .navbar-bottom, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
 }/*# sourceMappingURL=styles.css.map */

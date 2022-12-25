@@ -1,14 +1,38 @@
-.header 
+.navbar 
   background-color: #fff
-  &__top
+  &-top
     display: flex
     justify-content: space-between
     align-items: center
     padding-top: 40px
     padding-bottom: 40px
+    &__menu-button
+      display: none
   &__search
     margin-right: auto
     margin-left: 108px
+  &-bottom
+    background-color: #0A223D
+    padding-top: 31px
+    padding-bottom: 31px
+  &-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    list-style-type: none
+    padding: 0
+    margin: 0
+    &__item
+      font-size: 14px
+      line-height: 18px
+      text-transform: uppercase
+      font-weight: 700
+    &__link 
+      color: #fff
+      text-decoration: none 
+
+img
+  max-width: 100%
 .search
   display: flex
   position: relative
@@ -39,11 +63,9 @@
     width: 16px
     height: 16px
 .user
-  width: 40px
-  &__link
-    display: flex
-    align-items: center
-    text-decoration: none
+  display: flex
+  align-items: center
+  text-decoration: none
   &__avatar
     width: 40px
     height: 40px

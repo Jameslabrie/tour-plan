@@ -1,0 +1,48 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+@media (max-width: 992px)
+  .container
+    max-width: 760px
+  .navbar
+    &__search
+      margin-left: auto
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &-bottom
+      padding-top: 22px
+      padding-bottom: 22px
+    &-menu
+      &__item
+        font-size: 12px
+        line-height: 15px
+  .search
+    &__input
+      width: 340px
+  .logo
+    width: 132px
+@media (max-width: 768px)
+  .container
+    max-width: 650px
+    width: 90%
+  .navbar
+    &-top
+      &__menu-button
+        justify-content: space-between
+        height: 11px
+        padding: 0
+    &__search, &-bottom, &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      flex-direction: column
+      border: none
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $font-color
+   
+      
