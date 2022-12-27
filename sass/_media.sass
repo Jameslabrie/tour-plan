@@ -45,5 +45,34 @@
         height: 1px
         background-color: $font-color
 
+@media (max-width: 320px)
+  .container
+    max-width: 280px
+  .rating
+    &__text
+      font-size: 8px
+      line-height: 10px
+
+  .hotel
+    &-info
+      margin-top: 0
+      margin-bottom: 20px
+      &__right
+        display: none
+      &__offer
+        order: -1
+      &__left
+        justify-content: space-between
+      &__name
+        margin: auto
+        margin-bottom: 0
+        margin-left: 0
+      &__description 
+        margin: auto
+        text-align: inherit
+  .stars
+    flex-basis: 30%
+    
+
    
       
