@@ -436,6 +436,30 @@ img {
   color: #333333;
 }
 
+.breadcrumbs {
+  background-color: #F5FAFE;
+}
+.breadcrumbs-list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 18px 0;
+}
+.breadcrumbs-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumbs-list__item {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  margin-right: 3px;
+}
+.breadcrumbs-list__item ::after {
+  content: "/";
+  padding-left: 3px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
