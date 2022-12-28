@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
   </head>
@@ -133,17 +137,52 @@
                   4.5/
                   <div class="rating__counter-item">5</div>
                 </div>
-                </div>
-                
+                <!-- /.rating-wrapper -->
               </div>
             </div>
             <!-- /.hotel-info__right -->
           </div>
           <!-- /.hotel-wrapper -->
+          <div class="hotel-grid">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="img-slide" src="/img/slide1.jpeg" alt="sea" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="img-slide"
+                    src="/img/slide2.jpeg"
+                    alt="hotel name"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-slide" src="/img/slide3.jpeg" alt="sirenis" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-slide" src="/img/slide4.jpeg" alt="slide4" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-slide" src="/img/slide5.jpeg" alt="slide5" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button-prev"></button>
+              <button class="slider-button slider-button-next"></button>
+            </div>
+            <!-- /.swiper -->
+          </div>
+          <!-- /.hotel-grid -->
         </div>
+        <!-- /.hotel-info -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
