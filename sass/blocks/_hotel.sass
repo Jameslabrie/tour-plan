@@ -2,6 +2,10 @@
   &-info
     margin-top: 23px
     margin-bottom: 70px
+  &-right
+    display: flex
+    justify-content: space-between
+    flex-direction: column
     &__left
       display: flex
       flex-wrap: wrap
@@ -35,7 +39,6 @@
     justify-content: space-between
   &-grid
     display: flex
-    align-items: flex-start
     justify-content: space-between
 .stars
   width: 100%   
@@ -150,3 +153,31 @@
     display: flex
     justify-content: space-between
     margin-bottom: 17px
+  &__num
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__numbers
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    margin-left: 8px
+    text-decoration: none
+    color: inherit
+  &__button
+    background-color: $button-color
+    padding: 13px 80px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border: none
+    border-radius: 4px
+    color: inherit
+.map
+  width: 347px
+  min-height: 213px
+  background-color: #000
+  border-radius: 10px
